@@ -24,11 +24,10 @@ export const renderDatePicker = ({
       <Controller
         control={control}
         name={name}
-        defaultValue={defaultValue ?? new Date()}
         rules={{ required: true }}
         render={({ field }) => (
           <DatePicker
-            value={defaultValue ?? undefined}
+            value={defaultValue ?? new Date()}
             label={label}
             onSelectDate={(date) => field.onChange(date)}
             placeholder="Select a date..."
