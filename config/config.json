@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-table-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactTable/ReactTableWebPart.js",
+          "manifest": "./src/webparts/reactTable/ReactTableWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactTableWebPartStrings": "lib/webparts/reactTable/loc/{locale}.js"
+  }
+}
